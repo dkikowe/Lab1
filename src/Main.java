@@ -83,6 +83,24 @@ public class Main{
         }
     }
 
+
+    /**
+            5th task
+     Calculates the nth Fibonacci number recursively.
+     @param n The index of the Fibonacci number to be calculated.
+     @return The nth Fibonacci number.
+     */
+
+    public static int fibonnacci(int n){
+        if(n <= 2){
+            return 1;
+        }
+        else{
+            return fibonnacci(n-1) + fibonnacci(n-2);
+        }
+    }
+
+
 }
 
 
