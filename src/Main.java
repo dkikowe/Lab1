@@ -100,6 +100,26 @@ public class Main{
         }
     }
 
+    /**
+        6th task
+     Calculating the power of a number recursively.
+     @param a The base number.
+     @param n The exponent.
+     @return The result of raising 'a' to the power of 'n'.
+     */
+
+    public static int powerOf(int a , int n){
+        if (n==1){
+            return a;
+        }
+        else if (n==0){
+            return 1;
+        }
+        else{
+            return a*powerOf(a,n-1);
+        }
+    }
+
 
 }
 
