@@ -134,6 +134,42 @@ public class Main{
         reverseArr(n-1, arr);
     }
 
+    /**
+     *8th task
+     * This function checked, given str has digit or not
+     * There are I used Character.isDigit to check every letter in my stroke
+     * s.charAt give me letter by index
+     * @param s it`s given stroke
+     * @param index given index for recursion function to iteration before end of the stroke
+     * @return true or false, have we digit on stroke or not
+     */
+
+    public static boolean isConsistDigit(String s, int index){
+        if(index == s.length()){
+            return false;
+        }
+
+        if(Character.isDigit(s.charAt(index))){
+            return true;
+        }
+        return isConsistDigit(s, index+1);
+
+    }
+
+    /**
+     * 9th task
+     * There are function which calculate Binomial Coefficient
+     * @param n parametr which needed for formula C, n, k
+     * @param k parametr which needed for formula C, n, k
+     * @return result of the formula
+     */
+    public static int binomialCoeff(int n, int k){
+        if(k == 0 || n == k){
+            return 1;
+        }
+        return binomialCoeff(n-1, k-1) + binomialCoeff(n-1, k);
+    }
+
 
 
 
