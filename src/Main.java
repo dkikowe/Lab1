@@ -67,6 +67,22 @@ public class Main{
         return true;
 
     }
+    /**
+        4th task
+     Calculating the factorial of the given integer recursively.
+     @param n The integer for which factorial is calculated.
+     @return The factorial of the given integer.
+     */
+
+    public static int factorial(int n) {
+        if (n == 1) {
+            return 1;
+
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+
 }
 
 
