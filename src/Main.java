@@ -31,8 +31,42 @@ public class Main{
     }
 
 
+    /** second task
 
+     Calculates the average of the elements in the given array up to index n.
+     If n is 1, returns the only element in the array.
+     Otherwise, recursively computes the sum of elements up to index n-1 and divides it by n.
+     @param n The index up to which the average is calculated.
+     @param arr The array of elements.
+     @return The average of the elements up to index n.
+     */
 
+    public static double average(int n, double[] arr){
+        if(n==1){
+            return arr[0];
+        }
+        else{
+            return (arr[n-1]+average(n-1, arr))/n;
+        }
+    }
+    /**
+     third task
+     Checks if the given integer is a prime number.
+     @param n The integer to be checked for primality.
+     @return True if the integer is prime, false otherwise.
+     */
+    public static boolean isPrime(int n){
+        if(n == 1){
+            return false;
+        }
+        for(int i = 2 ; i<=Math.sqrt(n); i++) {
+            if(n % i == 0){
+                return false ;
+            }
+        }
+        return true;
+
+    }
 }
 
 
