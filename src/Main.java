@@ -119,6 +119,22 @@ public class Main{
             return a*powerOf(a,n-1);
         }
     }
+    /**
+     * 7th task
+     * This function reversed given Array with recusrsion
+     * @param n how many elements in the array
+     * @param arr given array
+     */
+    public static void reverseArr(int n, int[] arr){
+        if(n == 1){
+            System.out.print(arr[0] + " ");
+            return;
+        }
+        System.out.print(arr[n-1] + " ");
+        reverseArr(n-1, arr);
+    }
+
+
 
 
 }
