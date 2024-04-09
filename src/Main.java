@@ -2,7 +2,19 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String args[]){
-        System.out.println("Which problem would you want to check? 1 - 10");
+        System.out.println("" +
+                "Which problem would you want to check? 1 - 10\n" +
+                "1)Finding minimum\n" +
+                "2)Finding average\n" +
+                "3)Checking for prime\n" +
+                "4)Finding factorial\n" +
+                "5)Finding nth Fibonacci element\n" +
+                "6)a to the power n\n" +
+                "7)Reversed array\n" +
+                "8)Checking for digit consisting\n" +
+                "9)Binomial coefficient\n" +
+                "10)Finding GCD");
+
         Scanner sc = new Scanner(System.in);
         int problem = sc.nextInt();
 
@@ -39,7 +51,7 @@ public class Main{
                 System.out.println(consistDigit("st123", 1));
                 break;
             case 9:
-                System.out.println(binomialCoeff(14,17));
+                System.out.println(binomialCoeff(17,14));
                 break;
             case 10:
                 System.out.println("gcd:" + findGSD(45 , 58));
@@ -87,7 +99,7 @@ public class Main{
     }
     /**
      third task
-     Checks if the given integer is a prime number.
+     Function checks if the given integer is a prime number.
      @param n The integer to be checked for primality.
      @return True if the integer is prime, false otherwise.
      */
@@ -122,7 +134,7 @@ public class Main{
 
     /**
             5th task
-     Calculates the nth Fibonacci number recursively.
+     this function calculates the nth Fibonacci number recursively.
      @param n The index of the Fibonacci number to be calculated.
      @return The nth Fibonacci number.
      */
@@ -138,7 +150,7 @@ public class Main{
 
     /**
         6th task
-     Calculating the power of a number recursively.
+     this function calculates the power of a number recursively.
      @param a The base number.
      @param n The exponent.
      @return The result of raising 'a' to the power of 'n'.
