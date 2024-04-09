@@ -156,33 +156,7 @@ public class Main{
 
     }
 
-    /**
-     * 9th task
-     * There are function which calculate Binomial Coefficient
-     * @param n parametr which needed for formula C, n, k
-     * @param k parametr which needed for formula C, n, k
-     * @return result of the formula
-     */
-    public static int binomialCoeff(int n, int k){
-        if(k == 0 || n == k){
-            return 1;
-        }
-        return binomialCoeff(n-1, k-1) + binomialCoeff(n-1, k);
-    }
 
-    /**
-     * 10th task
-     * There is function which find GSD of 2 numbers with Euclidean Algorithm and with recursion
-     * @param a number 1
-     * @param b number 2
-     * @return GSD of 2 numbers
-     */
-    public static int findGSD(int a, int b){
-        if(b == 0){
-            return a;
-        }
-        return findGSD(b, a%b);
-    }
 
 
 }
